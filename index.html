@@ -6,120 +6,167 @@
     <title>Curriculum Vitae - Carlos Alejandro Fuentes Escalante</title>
     <style>
         :root {
-            --primary-color: #2563eb;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --bg-light: #f3f4f6;
+            --primary-color: #581c87; /* Morado intenso profesional */
+            --secondary-color: #7e22ce; /* Violeta medio */
+            --accent-light: #f5f3ff; /* Fondo morado muy tenue */
+            --text-dark: #1e1b4b; /* Azul/Morado casi negro para lectura */
+            --text-light: #4b5563;
+            --border-color: #ddd6fe;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-light);
+            background-color: #f8fafc;
             color: var(--text-dark);
         }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 20px auto;
             background: #fff;
             padding: 40px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-top: 8px solid var(--primary-color);
         }
 
         header {
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 20px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin-bottom: 25px;
         }
 
-        .header-info h1 {
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h1 {
             margin: 0;
             font-size: 2.2rem;
             color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
         }
 
-        .header-links a {
-            text-decoration: none;
+        .job-title {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            font-size: 0.85rem;
             color: var(--text-light);
-            margin-left: 15px;
-            font-size: 0.9rem;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
         }
 
-        .header-links a:hover {
-            color: var(--primary-color);
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         h2 {
-            font-size: 1.5rem;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 15px;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
+            background-color: var(--accent-light);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-right: 4px solid var(--primary-color);
+            margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        .experience-item {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed #e5e7eb;
+        .exp-item {
+            margin-bottom: 20px;
         }
 
-        .experience-item:last-child { border-bottom: none; }
-
-        .experience-header {
+        .exp-header {
             display: flex;
             justify-content: space-between;
             font-weight: bold;
             color: var(--primary-color);
+            margin-bottom: 2px;
         }
 
-        .tech-tags {
+        .exp-subheader {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .tag-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
             margin-top: 10px;
         }
 
         .tag {
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 4px 10px;
-            border-radius: 12px;
+            background: var(--primary-color);
+            color: white;
             font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: 500;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-title {
             font-weight: bold;
+            display: block;
+            color: var(--secondary-color);
+            margin-bottom: 4px;
         }
 
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-            padding: 0;
+        .course-item {
+            border-left: 2px solid var(--border-color);
+            padding-left: 10px;
+            margin-bottom: 10px;
         }
 
-        .skills-list li {
-            background: #fff;
-            border: 1px solid var(--primary-color);
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 0.9rem;
+        @media (max-width: 768px) {
+            .grid-2, .header-main { display: block; }
+            .contact-info { grid-template-columns: 1fr; }
+            .exp-header { flex-direction: column; }
         }
 
-        @media (max-width: 600px) {
-            header { flex-direction: column; text-align: center; }
-            .header-links { margin-top: 15px; }
-            .experience-header { flex-direction: column; }
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; margin: 0; padding: 20px; width: 100%; }
         }
     </style>
 </head>
@@ -127,73 +174,132 @@
 
 <div class="container">
     <header>
-        <div class="header-info">
-            <h1>Carlos Alejandro Fuentes</h1>
-            <p>Ingeniería Informática | Especialista Odoo, ETL & DevOps</p>
+        <div class="header-main">
+            <div>
+                <h1>Carlos Alejandro Fuentes Escalante</h1>
+                <p class="job-title">Estudiante de Ingeniería Informática | Analista Odoo, ETL y DevOps</p>
+            </div>
         </div>
-        <div class="header-links">
-            <a href="https://cfuentesdev.github.io/Curriculum/" target="_blank">Portfolio</a>
-            <a href="mailto:cfuentes1507@proton.me">Email</a>
-            <a href="tel:04123690745">Contacto</a>
+        <div class="contact-info">
+            <span>📍 La Vega Caracas, 1020</span>
+            <span>📧 cfuentes1507@proton.me</span>
+            <span>📱 04123690745</span>
+            <span>🌐 <a href="https://cfuentesdev.github.io/Curriculum/">cfuentesdev.github.io/Curriculum/</a></span>
         </div>
     </header>
 
     <section id="perfil">
         <h2>Perfil Profesional</h2>
-        <p>Estudiante de Ingeniería Informática y Analista especializado en <strong>Odoo, ETL y DevOps</strong>. Experiencia comprobada en la modernización de infraestructura digital y monitoreo avanzado de métricas[cite: 78]. Comprometido con la formación técnica de equipos para maximizar la autonomía operativa[cite: 79].</p>
-    </section>
-
-    <section id="tecnologias">
-        <h2>Tecnologías Clave</h2>
-        <div class="tech-tags">
-            <span class="tag">Python</span> <span class="tag">XML</span> <span class="tag">Odoo ERP</span>
-            <span class="tag">Docker</span> <span class="tag">GitHub</span> <span class="tag">SQL</span>
-            <span class="tag">ETL</span> <span class="tag">Grafana</span> <span class="tag">Ciberseguridad</span> 
+        <p>Estudiante de Ingeniería Informática y Analista especializado en Odoo, ETL y DevOps. Experiencia comprobada en la modernización de infraestructura digital y el monitoreo avanzado de métricas. Comprometido con la mejora continua y la formación técnica de equipos para maximizar la autonomía operativa.</p>
+        <div class="tag-container">
+            <span class="tag">Python</span><span class="tag">XML</span><span class="tag">Odoo ERP</span>
+            <span class="tag">Docker</span><span class="tag">GitHub</span><span class="tag">SQL</span>
+            <span class="tag">ETL</span><span class="tag">Grafana</span><span class="tag">Ciberseguridad</span>
         </div>
     </section>
 
     <section id="experiencia">
         <h2>Experiencia Laboral</h2>
         
-        <div class="experience-item">
-            <div class="experience-header">
+        <div class="exp-item">
+            <div class="exp-header">
                 <span>Root3B - Analista</span>
-                <span>Oct 2024 - Actualidad</span>
+                <span>Octubre 2024 - Actualidad</span>
             </div>
+            <span class="exp-subheader">Caracas, Distrito Capital</span>
             <ul>
-                <li>Ejecución de procesos ETL para migración exitosa a Odoo[cite: 92].</li>
-                <li>Diseño de tableros en Grafana para monitoreo de flujo de datos[cite: 93].</li>
-                <li>Programación de funcionalidades a medida en Python/XML para Odoo[cite: 96, 134].</li>
+                <li>Ejecución de procesos de limpieza, normalización y transformación de datos (ETL) para asegurar una migración exitosa hacia el ecosistema Odoo.</li>
+                <li>Diseño de tableros estadísticos en Grafana para monitorear el flujo de datos cargados en múltiples sistemas, facilitando reportes de gestión.</li>
+                <li>Responsable del ciclo completo de proyectos digitales utilizando GitHub.</li>
+                <li>Implementación de tableros de GitHub Projects para planificación y gestión de requerimientos mediante Issues, garantizando trazabilidad total.</li>
+                <li>Programación de funcionalidades a medida en Odoo para automatizar procesos no cubiertos por módulos estándar.</li>
+                <li>Creación de flujos de trabajo personalizados, reportes avanzados y reglas de validación de datos.</li>
+                <li>Capacitación de personal para el manejo de módulos personalizados de Odoo.</li>
+                <li>Planificación y ejecución de misiones de levantamiento de información en sitios remotos.</li>
             </ul>
         </div>
 
-        <div class="experience-item">
-            <div class="experience-header">
-                <span>Min. de Pesca y Acuicultura - Desarrollador Junior</span>
-                <span>Nov 2022 - Actualidad</span>
+        <div class="exp-item">
+            <div class="exp-header">
+                <span>Ministerio del Poder Popular de Pesca y Acuicultura - Desarrollador Junior</span>
+                <span>Noviembre 2022 - Actualidad</span>
             </div>
+            <span class="exp-subheader">Caracas, Distrito Capital</span>
             <ul>
-                <li>Despliegue y seguridad de portales institucionales mediante Docker[cite: 102, 103].</li>
-                <li>Capacitación en ciberseguridad (Phishing e Ingeniería Social)[cite: 106].</li>
-                <li>Estandarización de procesos mediante manuales técnicos (SOPs)[cite: 107].</li>
+                <li>Responsable del despliegue, mantenimiento y seguridad de portales web institucionales como Minpesca, Cenipa, Pescalba y Fonpesca.</li>
+                <li>Gestión integral del ciclo de vida de aplicaciones mediante Docker, asegurando la paridad entre entornos de desarrollo y producción.</li>
+                <li>Creación de arquitecturas replicables y diseño de programas de formación técnica para usuarios y equipos de trabajo.</li>
+                <li>Realización de capacitaciones sobre Phishing, ingeniería social y manejo seguro de contraseñas.</li>
+                <li>Estandarización de procesos mediante manuales técnicos para lograr transferencia de conocimiento y autonomía del equipo de Soporte Técnico.</li>
+                <li>Ejecución de misiones técnicas presenciales para despliegue de infraestructura y resolución de incidentes críticos regionales.</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-header">
+                <span>Vicepresidencia - Servicio Nacional de Contrataciones - Asistente Administrativo</span>
+                <span>Noviembre 2021 - Abril 2022</span>
+            </div>
+            <span class="exp-subheader">Caracas, Distrito Capital</span>
+            <ul>
+                <li>Responsable del análisis y carga de facturas de pagos correspondientes a las tasas del RNC.</li>
+                <li>Verificación de documentación técnica y financiera para la carga de comprobantes de pago.</li>
+                <li>Seguimiento y control de pagos por concepto de inscripciones, renovaciones y actualizaciones.</li>
+                <li>Ejecución de conciliaciones entre pagos emitidos y facturas procesadas por el sistema SIGEPS.</li>
             </ul>
         </div>
     </section>
 
-    <section id="educacion">
-        <h2>Educación y Cursos</h2>
-        <ul class="skills-list">
-            <li>Ingeniería Informática (UNEXCA) - En curso [cite: 83, 84, 89]</li>
-            <li>IA: Machine Learning y Deep Learning (40h) [cite: 122, 124]</li>
-            <li>Programación Python (90h) [cite: 127, 128]</li>
-            <li>Ciberseguridad e Inteligencia Artificial [cite: 119]</li>
-        </ul>
-    </section>
+    <div class="grid-2">
+        <section id="educacion">
+            <h2>Educación</h2>
+            <div class="exp-item">
+                <strong>Universidad Nacional Experimental de la Gran Caracas</strong><br>
+                Ingeniería informática - Segundo semestre (En curso)
+            </div>
+            <div class="exp-item">
+                <strong>Unidad Educativa Nacional Bolivariana "Pedro Fontes"</strong><br>
+                Bachiller: Mención Ciencias (Egreso: 2020)
+            </div>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p><strong>Ubicación:</strong> La Vega, Caracas, Venezuela </p>
-        <p><strong>Idiomas:</strong> Español (Nativo), Inglés (Técnico/Básico) [cite: 131, 132]</p>
+        <section id="cursos">
+            <h2>Cursos y Certificaciones</h2>
+            <div class="course-item">
+                <strong>IA: Machine Learning y Deep Learning</strong><br>
+                Min. Ciencia y Tecnología | 40 horas académicas
+            </div>
+            <div class="course-item">
+                <strong>Programación: Python</strong><br>
+                IAPEV | 90 horas académicas
+            </div>
+            <div class="course-item">
+                <strong>Páginas Web y Ciberseguridad</strong><br>
+                MIPPCI | 6 horas académicas
+            </div>
+            <div class="course-item">
+                <strong>Ciberseguridad e Inteligencia Artificial</strong><br>
+                Minpesca | 2 horas académicas
+            </div>
+        </section>
+    </div>
+
+    <section id="habilidades">
+        <h2>Habilidades Técnicas e Intereses</h2>
+        <div class="grid-2">
+            <div>
+                <span class="skill-title">Desarrollo ERP e Infraestructura</span>
+                <p>Odoo (Python/XML), flujos de validación, entornos Docker (Dev/Prod), servidores hosting y laboratorios Staging.</p>
+                <span class="skill-title">Datos y Calidad</span>
+                <p>SQL, ETL, Dashboards en Grafana, QA & Testing funcional y de carga.</p>
+            </div>
+            <div>
+                <span class="skill-title">Gestión y Seguridad</span>
+                <p>GitHub Projects (Agile), levantamiento de requerimientos, Ciberseguridad (Security Awareness) y Soporte Nivel 2/3.</p>
+                <p><strong>Idiomas:</strong> Español (Nativo), Inglés (Lectura técnica y scripts).</p>
+                <p><strong>Intereses:</strong> Software Libre, Aprendizaje Continuo, Viajes Corporativos.</p>
+            </div>
+        </div>
     </section>
 </div>
 
