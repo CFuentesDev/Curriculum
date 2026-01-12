@@ -38,8 +38,8 @@ Soy un apasionado de la optimización de procesos y la gestión de infraestructu
 
 ### 💼 Experiencia Relevante
 
-* **Root3B (Analista):** Especializado en migraciones de datos (ETL), desarrollo de módulos a medida en Odoo y monitoreo de flujos en Grafana.
-* **Minpesca (Dev Junior):** Gestión de infraestructura con Docker, seguridad de portales institucionales y formación técnica de equipos.
+* **Root3B (Analista):** Desarrollo de módulos a medida en Odoo, Migraciones de datos (ETL), Creación de graficos mediante Grafana, Gestión de proyectos usando metodologias agiles.
+* **Minpesca (Dev Junior):** Desarrollo de módulos a medida en Odoo, gestión de infraestructura con Docker, seguridad de portales institucionales y formación técnica de equipos.
 
 ---
 
