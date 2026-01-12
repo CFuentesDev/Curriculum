@@ -57,7 +57,7 @@ Soy un apasionado de la optimización de procesos y la gestión de infraestructu
 ### 📫 Contacto
 
 - 📧 Email: [cfuentes1507@proton.me](mailto:cfuentes1507@proton.me)
-- 🌐 Portafolio: [cfuentesdev.github.io/Curriculum/](https://cfuentesdev.github.io/Curriculum/)
+- 🌐 Curriculum: [cfuentesdev.github.io/Curriculum/](https://cfuentesdev.github.io/Curriculum/)
 - 📍 Caracas, Venezuela
 
 <p align="right">
