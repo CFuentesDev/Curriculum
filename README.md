@@ -2,8 +2,13 @@
   <img src="./avila4.png">
 </div>
 
-# Hola, soy Carlos Fuentes 👋 <img src="https://komarev.com/ghpvc/?username=CFuentesDev&label=Perfil%20Visto&color=581c87&style=flat" alt="CFuentesDev" />
+<p align="right">
+  <i>Caracas, Venezuela.</i>
+</p>
 
+---
+
+# Hola, soy Carlos Fuentes 👋 <img src="https://komarev.com/ghpvc/?username=CFuentesDev&label=Perfil%20Visto&color=581c87&style=flat" alt="CFuentesDev"/>
 <img src="https://readme-typing-svg.herokuapp.com?font=Source+Code+Pro&size=24&pause=1000&color=FFFFFF&width=620&&lines=Estudiante+de+Ingeniería+Informática;Programador+Junior;Desarrollador+Web;Implementación+Odoo+y+Flujos+ETL;Gestión+de+Entornos+Docker+y+DevOps;Apacionado+por+el+Software+Libre" alt="typing" />
 
 ### 🚀 Estudiante de Ingeniería Informática | Especialista Odoo, ETL & DevOps
@@ -35,27 +40,6 @@ Soy un apasionado de la optimización de procesos y la gestión de infraestructu
 
 * **Root3B (Analista):** Especializado en migraciones de datos (ETL), desarrollo de módulos a medida en Odoo y monitoreo de flujos en Grafana.
 * **Minpesca (Dev Junior):** Gestión de infraestructura con Docker, seguridad de portales institucionales y formación técnica de equipos.
-
----
-
-### 📊 Estadísticas de GitHub
-<p align="center">
-  <img height="180em" src="https://github-readme-stats-two.vercel.app/api?username=CFuentesDev&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-two.vercel.app/api/top-langs/?username=CFuentesDev&layout=compact&theme=tokyonight"/>
-</p>
-
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=CFuentesDev&show_icons=true&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=CFuentesDev&show_icons=true"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api?username=CFuentesDev&show_icons=true" />
-</picture>
-
 
 ---
 
