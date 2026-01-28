@@ -48,7 +48,6 @@ Soy un apasionado de la optimización de procesos y la gestión de infraestructu
 | Proyecto | Descripción | Tech Stack |
 | :--- | :--- | :--- |
 | [**Gestión de Correspondencias**](https://github.com/CFuentesDev/correspondence) | Repositorio de módulo personalizado para Odoo ERP, incluyendo flujos de validación y reportes avanzados en XML/Python. | `Python`, `XML`, `Odoo` |
-| [**Controladores Webs Personalizados**](https://github.com/CFuentesDev/web_drivers) | Repositorio de módulo personalizado para Odoo ERP, incluyendo controladores web en XML/Python. | `Python`, `XML`, `Odoo` |
 | [**Certificados Personalizados**](https://github.com/CFuentesDev/custom_certificate) | Repositorio de módulo personalizado para Odoo ERP, incluyendo nuevas plantillas de certificados en XML/Python. | `Python`, `XML`, `Odoo` |
 | [**Calendario**](https://github.com/CFuentesDev/Calendario_wp) | Repositorio de módulo personalizado para WordPress, incluyendo nuevos componentes en shortcode. | `PHP`, `JavaScript`, `CSS`, `HTML`, `WordPress` |
 
